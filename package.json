@@ -1,6 +1,6 @@
 {
   "name": "altheajs-eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An eslint config, what else?",
   "main": "index.js",
   "repository": {
