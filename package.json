@@ -1,6 +1,6 @@
 {
-  "name": "altheajs-eslint-config",
-  "version": "1.0.3",
+  "name": "eslint-config-altheajs",
+  "version": "1.0.0",
   "description": "An eslint config, what else?",
   "main": "index.js",
   "repository": {
@@ -8,7 +8,9 @@
     "url": "git+https://github.com/drewcook/eslint-config.git"
   },
   "keywords": [
-    "eslint config"
+    "eslint",
+		"eslintconfig",
+		"eslint config"
   ],
   "author": "Drew Cook",
   "license": "ISC",
@@ -16,15 +18,27 @@
     "url": "https://github.com/drewcook/eslint-config/issues"
   },
   "homepage": "https://github.com/drewcook/eslint-config#readme",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.28.3",
-    "@typescript-eslint/parser": "^4.28.3",
-    "eslint": "^7.30.0",
-    "eslint-config-airbnb-typescript": "^12.3.1",
+  "dependencies": {
+		"@typescript-eslint/parser": "^4.28.3",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^12.3.1"
+  },
+  "peerDependencies": {
+		"eslint": "^7.30.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-vue": "^7.13.0"
+    "eslint-plugin-vue": "^7.13.0",
+		"@typescript-eslint/eslint-plugin": "^4.28.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-vue": "^7.13.0",
+		"@typescript-eslint/eslint-plugin": "^4.28.3"
   }
 }
