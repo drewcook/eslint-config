@@ -26,7 +26,7 @@ The simplest way to install and use the default config is to reference it direct
 
 ```json
 {
-	// ...package.json
+	/// ...package.json
 	"eslintConfig": {
 		"extends" : "altheajs-eslint-config"
 	}
@@ -48,11 +48,11 @@ You can add in an npm script to your `package.json` which will apply lint rules 
 
 ```json
 {
-	// ...package.json
+	/// ...package.json
 	"scripts": {
-		// check for linting errors
+		/// check for linting errors
 		"lint:quality": "eslint -c .eslintrc.js ./**/*",
-		// fix and apply the rules to those that can be fixed
+		/// fix and apply the rules to those that can be fixed
 		"fix:quality": "eslint -c .eslintrc.js ./**/* --fix",
 	}
 }
@@ -68,7 +68,7 @@ You can add in an npm script to your `package.json` which will apply lint rules 
 
 	```json
 	{
-		// ...settings.json
+		/// ...settings.json
 		"editor.codeActionsOnSave": {
 			"source.fixAll.eslint": true
 		}
