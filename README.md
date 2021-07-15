@@ -38,6 +38,8 @@ If you'd like to extend the configurations, create a `.eslintrc.js` file at the 
 ```js
 module.exports = {
 	"extends": ["altheajs-eslint-config"],
+	// if using typescript
+	"parserOptions": { "project": "./tsconfig.json" }
 	// ...more custom config overrides
 };
 ```
@@ -51,9 +53,9 @@ You can add in an npm script to your `package.json` which will apply lint rules 
 	// ...package.json
 	"scripts": {
 		// check for linting errors
-		"lint:quality": "eslint -c .eslintrc.js ./**/*",
+		"lint:quality": "npx eslint -c .eslintrc.js . --ext .js,.jsx,.ts,.tsx"
 		// fix and apply the rules to those that can be fixed
-		"fix:quality": "eslint -c .eslintrc.js ./**/* --fix",
+		"fix:quality": "npx eslint -c .eslintrc.js . --ext .js,.jsx,.ts,.tsx --fix",
 	}
 }
 ```
