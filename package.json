@@ -1,0 +1,19 @@
+{
+  "name": "altheajs-eslint-config",
+  "version": "1.0.0",
+  "description": "An eslint config, what else?",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewcook/eslint-config.git"
+  },
+  "keywords": [
+    "eslint config"
+  ],
+  "author": "Drew Cook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewcook/eslint-config/issues"
+  },
+  "homepage": "https://github.com/drewcook/eslint-config#readme"
+}
