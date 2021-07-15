@@ -1,21 +1,21 @@
-# altheajs-eslint-config
+# eslint-config-altheajs
 
 Althea Web Service's [`eslint`](https://eslint.org/) configuration.
 
-You can view this package on NPM: [click here](https://www.npmjs.com/package/altheajs-eslint-config)
+You can view this package on NPM: [click here](https://www.npmjs.com/package/eslint-config-altheajs)
 
 ## Installation
 
 ### npm
 
 ```sh
-npm install --save-dev altheajs-eslint-config
+npm install --save-dev eslint-config-altheajs
 ```
 
 ### yarn
 
 ```sh
-yarn add --dev altheajs-eslint-config
+yarn add --dev eslint-config-altheajs
 ```
 
 ## Usage
@@ -28,16 +28,16 @@ The simplest way to install and use the default config is to reference it direct
 {
 	// ...package.json
 	"eslintConfig": {
-		"extends" : "altheajs-eslint-config"
+		"extends" : ["altheajs"]
 	}
 }
 ```
 
-If you'd like to extend the configurations, create a `.eslintrc.js` file at the root of your project that contains:
+If you'd like to extend the configurations, create a `.eslintrc.js` file at the root of your project that contains the following:
 
 ```js
 module.exports = {
-	"extends": ["altheajs-eslint-config"],
+	"extends": ["altheajs"], // you can omit "eslint-config-"
 	// if using typescript
 	"parserOptions": { "project": "./tsconfig.json" }
 	// ...more custom config overrides
