@@ -24,7 +24,7 @@ yarn add --dev altheajs-eslint-config
 
 The simplest way to install and use the default config is to reference it directly in your `package.json` file as follows:
 
-```js
+```json
 {
 	// ...package.json
 	"eslintConfig": {
@@ -38,7 +38,7 @@ If you'd like to extend the configurations, create a `.eslintrc.js` file at the 
 ```js
 module.exports = {
 	"extends": ["altheajs-eslint-config"],
-	/// ...more custom config overrides
+	// ...more custom config overrides
 };
 ```
 
@@ -46,9 +46,9 @@ module.exports = {
 
 You can add in an npm script to your `package.json` which will apply lint rules across all the file patterns specified. Simply add the following to apply to all files:
 
-```js
+```json
 {
-	/// ...package.json
+	// ...package.json
 	"scripts": {
 		// check for linting errors
 		"lint:quality": "eslint -c .eslintrc.js ./**/*",
@@ -62,11 +62,11 @@ You can add in an npm script to your `package.json` which will apply lint rules 
 
 ### Visual Studio Code
 
-1. Install ESLint [extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): `View → Extensions` then find and install ESLint.
+1. Install ESLint extension: `View → Extensions` then find and install the ESLint [extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 2. Reload the editor.
 3. In your user settings `Code -> Preferences -> Settings` add the following settings:
 
-	```js
+	```json
 	{
 		// ...settings.json
 		"editor.codeActionsOnSave": {
