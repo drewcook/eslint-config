@@ -4,6 +4,16 @@ Althea Web Service's [`eslint`](https://eslint.org/) configuration.
 
 You can view this package on NPM: [click here](https://www.npmjs.com/package/eslint-config-altheajs)
 
+This package supports the following by default out of the box:
+- `eslint-config-airbnb` - React with hooks support
+- `eslint-config-prettier` - Prettier support. Prettier configs will override the ESLint rules associated with style choices. In other words, `Pretter > ESLint`.
+- `eslint-plugin-vue` - Vue support
+
+This package *also* has the option for supporting TypeScript projects as well:
+- `eslint-config-airbnb-typescript` - React with hooks support
+- Everything else above!
+
+
 ## Installation
 
 ### npm
@@ -43,6 +53,22 @@ module.exports = {
 	// ...more custom config overrides
 };
 ```
+
+### TypeScript Usage
+If you're using a typescript project, you can use the exported TypeScript ESLint configuration.
+
+```js
+{
+	// ...package.json
+	"eslintConfig": {
+		"extends": ["altheajs/typescript"]
+	}
+}
+```
+
+### Usage with Prettier
+
+Since this package already bundles the `eslint-config-prettier` package under the hood, there is no need to install the dependency yourself.  You can use your Prettier config as you would normally in your project, and ESLint will prefer Prettier for style changes over its own.
 
 ## NPM Scripts Command
 
