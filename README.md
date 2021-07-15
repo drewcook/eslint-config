@@ -2,7 +2,7 @@
 
 Althea Web Service's [`eslint`](https://eslint.org/) configuration.
 
-You can view this package on NPM: [click here](https://npmjs.com)
+You can view this package on NPM: [click here](https://www.npmjs.com/package/altheajs-eslint-config)
 
 ## Installation
 
