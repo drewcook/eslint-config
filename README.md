@@ -107,3 +107,7 @@ You can add in an npm script to your `package.json` which will apply lint rules 
 ## Enforced Rules
 
 Check out all of ESlint's [configuration options](https://eslint.org/docs/rules/).
+
+<p align="center">
+ <img src="https://visitor-badge.glitch.me/badge?page_id=drewcook.eslint-config" alt="visitor count"/>
+</p>
